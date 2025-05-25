@@ -1,4 +1,4 @@
-iimport Head from 'next/head';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -18,26 +18,6 @@ export default function Home() {
         <button className="mt-8 px-6 py-3 bg-[#CA3CFF] text-white rounded-full shadow-md hover:opacity-90 transition duration-300">
           Book a Free Discovery Call
         </button>
-
-        <section className="mt-20 w-full max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-10">
-            What We Help You Do
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 px-4">
-            <div className="bg-[#F9F9F9] p-6 rounded-xl shadow-md hover:shadow-lg transition transform duration-700 ease-in-out hover:scale-105 animate-fade-up delay-75">
-              <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Launch</h3>
-              <p>We build stunning, AI-integrated websites and handle the entire setup — domain, hosting, analytics, and SEO.</p>
-            </div>
-            <div className="bg-[#F9F9F9] p-6 rounded-xl shadow-md hover:shadow-lg transition transform duration-700 ease-in-out hover:scale-105 animate-fade-up delay-150">
-              <h3 className="text-xl font-semibold text-[#2C3EFA] mb-2">Grow</h3>
-              <p>We manage your brand, automate your socials, and make sure your content strategy actually works.</p>
-            </div>
-            <div className="bg-[#F9F9F9] p-6 rounded-xl shadow-md hover:shadow-lg transition transform duration-700 ease-in-out hover:scale-105 animate-fade-up delay-300">
-              <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Evolve</h3>
-              <p>Want custom AI agents or smart workflows? We bring automation into your business without the buzzwords.</p>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
