@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './pages/**/*.{ts,tsx}', // this is all you need for now
+    './pages/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
@@ -12,6 +12,15 @@ const config: Config = {
       colors: {
         magenta: '#CA3CFF',
         blue: '#2C3EFA',
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.6s ease-out forwards',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
     },
   },
