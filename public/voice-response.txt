@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Response>
-  <Play>https://vantyx-template-yukv.vercel.app/greeting.mp3</Play>
-  <Record maxLength="60" action="https://oatythegoaty.app.n8n.cloud/webhook/recording-handler" method="POST" />
-</Response>
