@@ -43,19 +43,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Mission */}
-        <section className="mt-32 max-w-3xl mx-auto" data-aos="fade-up">
-          <h2 className="text-3xl font-bold mb-4">Why Vantyx Exists</h2>
-          <p className="text-lg leading-relaxed">
-            Vantyx was built on one core belief — that AI should make your life easier, not more confusing. I'm here to bridge the gap between smart technology and real people. Whether you're a small business owner, creator, or just curious about AI, I'm making tools that are practical, personal, and built with intention.
+        {/* Why Vantyx Exists */}
+        <section className="mt-32 max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-[#FAFAFF] to-white rounded-3xl shadow-sm" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-[#2C3EFA] mb-4">Why Vantyx Exists</h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            I built Vantyx because AI shouldn't be complicated or out of reach. This is about making smart tools for real people. Whether you're running a business, building something new, or just curious — I’m here to help you level up without all the hype.
           </p>
         </section>
 
-        {/* About You */}
-        <section className="mt-24 max-w-3xl mx-auto" data-aos="fade-up">
-          <h2 className="text-3xl font-bold mb-4">Meet the Founder</h2>
-          <p className="text-lg leading-relaxed">
-            I’m Ty — big dude, big thinker, and a builder by nature. I’ve worked across tech and service roles, but helping people feel empowered by AI is what really clicks for me. I like systems, good design, and getting things done without the extra fluff. Vantyx is my way of sharing that with the world.
+        {/* Meet the Founder */}
+        <section className="mt-24 max-w-4xl mx-auto px-6 py-16 bg-[#F0F4FF] rounded-3xl shadow-sm" data-aos="fade-up">
+          <h2 className="text-4xl font-bold text-[#CA3CFF] mb-4">Meet the Founder</h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            I’m Ty — big guy, big thinker. I’ve worked in tech, support, and everywhere in between. But helping people feel confident using AI? That’s my lane. I build systems that work, websites that pop, and automations that actually help. No fluff. No overwhelm. Just solid results with some style.
           </p>
         </section>
 
