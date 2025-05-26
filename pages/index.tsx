@@ -56,18 +56,18 @@ export default function Home() {
             What We Help You Do
           </h2>
           <div className="grid gap-8 md:grid-cols-3 px-4">
-            <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="100">
-              <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Launch</h3>
-              <p>We build stunning, AI-integrated websites and handle the entire setup — domain, hosting, analytics, and SEO.</p>
-            </div>
-            <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="200">
-              <h3 className="text-xl font-semibold text-[#2C3EFA] mb-2">Grow</h3>
-              <p>We manage your brand, automate your socials, and make sure your content strategy actually works.</p>
-            </div>
-            <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="300">
-              <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Evolve</h3>
-              <p>Want custom AI agents or smart workflows? We bring automation into your business without the buzzwords.</p>
-            </div>
+  <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+    <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Launch</h3>
+    <p>We build sleek, AI-ready websites and handle the full setup — domain, hosting, SEO, analytics, and automation workflows.</p>
+  </div>
+  <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+    <h3 className="text-xl font-semibold text-[#2C3EFA] mb-2">Grow</h3>
+    <p>From content strategy to automated social posts, we help you create a presence that runs smoother — and smarter.</p>
+  </div>
+  <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+    <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Evolve</h3>
+    <p>Learn how to actually use AI. From agent creation to hands-on education, we’ll teach you how to make tech work for you.</p>
+  </div>
           </div>
         </section>
 
