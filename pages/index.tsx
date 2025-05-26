@@ -21,9 +21,9 @@ export default function Home() {
     <h1 className="text-xl font-bold text-[#CA3CFF]">Vantyx.ai</h1>
     
     <div className="hidden md:flex space-x-6">
-      <a href="#mission" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">On God</a>
-      <a href="#about" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Run It Up</a>
-      <a href="#contact" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">oatman</a>
+      <a href="#mission" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Mission</a>
+      <a href="#about" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">About</a>
+      <a href="#contact" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Contact</a>
     </div>
 
     {/* Mobile Menu Button (non-functional for now) */}
