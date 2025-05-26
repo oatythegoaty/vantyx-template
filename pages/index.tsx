@@ -44,14 +44,10 @@ export default function Home() {
         </section>
 
         {/* Divider: Soundwave */}
-        <div className="w-full py-12 flex justify-center items-center" data-aos="fade-up">
-          <svg viewBox="0 0 200 20" className="w-64 h-6 text-[#CA3CFF] opacity-50 animate-pulse">
-            <path
-              fill="currentColor"
-              d="M0 10c10 0 10-10 20-10s10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10"
-            />
-          </svg>
-        </div>
+        {/* Section Divider */}
+<div className="w-full flex justify-center py-12" data-aos="fade-up">
+  <div className="w-20 h-1 bg-gradient-to-r from-[#CA3CFF] via-[#2C3EFA] to-[#CA3CFF] rounded-full opacity-70" />
+</div>
 
         {/* Why Vantyx Exists */}
         <section className="mt-8 max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-[#FAFAFF] to-white rounded-3xl shadow-sm" data-aos="fade-up">
