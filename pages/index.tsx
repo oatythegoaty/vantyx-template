@@ -88,16 +88,24 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section id="contact" className="mt-32 mb-24 max-w-xl mx-auto bg-[#F9F9F9] p-8 rounded-2xl shadow-sm" data-aos="zoom-in-up">
-          <h2 className="text-2xl font-bold mb-4">Let’s Build Something Smart Together</h2>
-          <p className="text-base mb-6">
-            Whether you’re just starting out or looking to level up, I’ve got tools that can make your life a lot easier.
-            Let’s talk and see what’s possible.
-          </p>
-          <button className="px-6 py-3 bg-[#2C3EFA] text-white rounded-full hover:opacity-90 transition duration-300">
-            Schedule a Discovery Call
-          </button>
-        </section>
+        <section id="contact" className="mt-32 mb-24 max-w-6xl mx-auto px-6" data-aos="zoom-in-up">
+  <div className="rounded-3xl bg-gradient-to-r from-[#CA3CFF] to-[#2C3EFA] p-10 md:flex items-center justify-between shadow-lg">
+    <div className="text-left text-white mb-6 md:mb-0">
+      <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
+      <p className="text-lg max-w-xl">
+        Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
+      </p>
+    </div>
+    <div className="text-center">
+      <a
+        href="#"
+        className="inline-block bg-white text-[#2C3EFA] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
+      >
+        Schedule a Discovery Call
+      </a>
+    </div>
+  </div>
+</section>
       </main>
     </>
   );
