@@ -16,14 +16,24 @@ export default function Home() {
       </Head>
 
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-[#CA3CFF]">Vantyx.ai</h1>
-        <div className="space-x-4 hidden md:block">
-          <a href="#mission" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Mission</a>
-          <a href="#about" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">About</a>
-          <a href="#contact" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Contact</a>
-        </div>
-      </nav>
+      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm px-6 py-4">
+  <div className="flex items-center justify-between max-w-7xl mx-auto">
+    <h1 className="text-xl font-bold text-[#CA3CFF]">Vantyx.ai</h1>
+    
+    <div className="hidden md:flex space-x-6">
+      <a href="#mission" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">On God</a>
+      <a href="#about" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">Run It Up</a>
+      <a href="#contact" className="text-gray-700 hover:text-[#CA3CFF] font-medium transition">oatman</a>
+    </div>
+
+    {/* Mobile Menu Button (non-functional for now) */}
+    <button className="md:hidden text-[#2C3EFA] focus:outline-none">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</nav>
 
       <main className="min-h-screen px-6 text-center text-gray-900 font-outfit bg-gradient-to-br from-white via-[#FAF9FF] to-[#f0f2ff]">
 
