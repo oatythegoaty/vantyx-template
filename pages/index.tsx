@@ -67,7 +67,7 @@ export default function Home() {
   <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="300">
     <h3 className="text-xl font-semibold text-[#CA3CFF] mb-2">Evolve</h3>
     <p>Learn how to actually use AI. From agent creation to hands-on education, we’ll teach you how to make tech work for you.</p>
-  </div>
+  </div> 
           </div>
         </section>
 
