@@ -22,7 +22,7 @@ export default function Home() {
           </button>
         </section>
 
-        {/* What We Do */}
+        {/* What We Help You Do */}
         <section className="mt-24 w-full max-w-6xl mx-auto" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             What We Help You Do
@@ -43,8 +43,18 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Divider: Soundwave */}
+        <div className="w-full py-12 flex justify-center items-center" data-aos="fade-up">
+          <svg viewBox="0 0 200 20" className="w-64 h-6 text-[#CA3CFF] opacity-50 animate-pulse">
+            <path
+              fill="currentColor"
+              d="M0 10c10 0 10-10 20-10s10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10"
+            />
+          </svg>
+        </div>
+
         {/* Why Vantyx Exists */}
-        <section className="mt-32 max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-[#FAFAFF] to-white rounded-3xl shadow-sm" data-aos="fade-up">
+        <section className="mt-8 max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-[#FAFAFF] to-white rounded-3xl shadow-sm" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-[#2C3EFA] mb-4">Why Vantyx Exists</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             I built Vantyx because AI shouldn't be complicated or out of reach. This is about making smart tools for real people. Whether you're running a business, building something new, or just curious — I’m here to help you level up without all the hype.
@@ -59,25 +69,25 @@ export default function Home() {
           </p>
         </section>
 
-      {/* CTA */}
-<section className="mt-32 mb-24 max-w-6xl mx-auto px-6" data-aos="zoom-in-up">
-  <div className="rounded-3xl bg-gradient-to-r from-[#CA3CFF] to-[#2C3EFA] p-10 md:flex items-center justify-between shadow-lg">
-    <div className="text-left text-white mb-6 md:mb-0">
-      <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
-      <p className="text-lg max-w-xl">
-        Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
-      </p>
-    </div>
-    <div className="text-center">
-      <a
-        href="#"
-        className="inline-block bg-white text-[#2C3EFA] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
-      >
-        Schedule a Discovery Call
-      </a>
-    </div>
-  </div>
-</section>
+        {/* CTA */}
+        <section className="mt-32 mb-24 max-w-6xl mx-auto px-6" data-aos="zoom-in-up">
+          <div className="rounded-3xl bg-gradient-to-r from-[#CA3CFF] to-[#2C3EFA] p-10 md:flex items-center justify-between shadow-lg">
+            <div className="text-left text-white mb-6 md:mb-0">
+              <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
+              <p className="text-lg max-w-xl">
+                Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
+              </p>
+            </div>
+            <div className="text-center">
+              <a
+                href="#"
+                className="inline-block bg-white text-[#2C3EFA] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
+              >
+                Schedule a Discovery Call
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
