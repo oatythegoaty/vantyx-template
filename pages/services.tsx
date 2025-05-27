@@ -1,52 +1,16 @@
 import Head from 'next/head';
+import Layout from '../components/Layout';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Services() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <>
+    <Layout>
       <Head>
         <title>Our Services | Vantyx.ai</title>
         <meta name="description" content="Explore what Vantyx.ai offers to help you launch, grow, and automate with AI." />
       </Head>
 
       <main className="min-h-screen px-6 pb-16 bg-gradient-to-br from-white via-[#F5F3EF] to-[#f0f2ff] text-[#1F2937] font-outfit">
-
-        {/* NAV */}
-        <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm px-6 py-4">
-          <div className="flex items-center justify-between max-w-7xl mx-auto">
-            <Link href="/" className="text-xl font-bold text-[#C2410C]">
-  Vantyx.ai
-</Link>
-
-            <div className="hidden md:flex space-x-6">
-              <Link href="/services" className="transition duration-300 hover:text-[#C2410C] hover:scale-105">Services</Link>
-              <Link href="/pricing" className="transition duration-300 hover:text-[#C2410C] hover:scale-105">Pricing</Link>
-              <Link href="/about" className="transition duration-300 hover:text-[#C2410C] hover:scale-105">About Us</Link>
-              <Link href="/contact" className="transition duration-300 hover:text-[#C2410C] hover:scale-105">Contact Us</Link>
-            </div>
-
-            <button
-              className="md:hidden text-[#C2410C] focus:outline-none"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-
-          {menuOpen && (
-            <div className="md:hidden mt-4 space-y-4 text-center">
-              <Link href="/services" className="block transition duration-300 hover:text-[#C2410C] hover:scale-105">Services</Link>
-              <Link href="/pricing" className="block transition duration-300 hover:text-[#C2410C] hover:scale-105">Pricing</Link>
-              <Link href="/about" className="block transition duration-300 hover:text-[#C2410C] hover:scale-105">About Us</Link>
-              <Link href="/contact" className="block transition duration-300 hover:text-[#C2410C] hover:scale-105">Contact Us</Link>
-            </div>
-          )}
-        </nav>
 
         {/* Hero Section */}
         <div className="max-w-5xl mx-auto text-center pt-16">
@@ -123,6 +87,6 @@ export default function Services() {
           </Link>
         </div>
       </main>
-    </>
+    </Layout>
   );
 }
