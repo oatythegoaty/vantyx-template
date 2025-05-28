@@ -18,67 +18,36 @@ export default function Pricing() {
           No surprise fees. Just clean, flexible options that scale with your goals.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {/* Starter Plan */}
-          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition">
-            <h2 className="text-2xl font-bold text-[#C2410C] mb-2">Starter</h2>
-            <p className="text-gray-600 mb-4">Best for individuals just getting started with their brand or idea.</p>
-            <p className="text-3xl font-bold mb-4">$125 <span className="text-sm font-normal">one-time</span></p>
-            <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
-              <li>1-page landing site</li>
-              <li>Basic SEO setup</li>
-              <li>Mobile-friendly design</li>
-              <li>Domain connection help</li>
-            </ul>
-            <Link href="/contact" className="inline-block bg-[#C2410C] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
-              Get Started
-            </Link>
-          </div>
-
-          {/* Growth Plan */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto justify-center">
+          {/* Monthly Plan */}
           <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition scale-105 border-2 border-[#C2410C]">
-            <h2 className="text-2xl font-bold text-[#1F2937] mb-2">Growth</h2>
-            <p className="text-gray-600 mb-4">For small businesses ready to grow smart and automate.</p>
-            <p className="text-3xl font-bold mb-4">$299 <span className="text-sm font-normal">one-time</span></p>
+            <h2 className="text-2xl font-bold text-[#1F2937] mb-2">Monthly Plan</h2>
+            <p className="text-gray-600 mb-4">Everything you need to build and grow your digital presence.</p>
+            <p className="text-3xl font-bold mb-4">$235/mo</p>
             <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
-              <li>Up to 3 custom pages</li>
-              <li>Advanced SEO</li>
+              <li>Website creation (1–5 pages)</li>
+              <li>Advanced SEO setup</li>
               <li>Social media automation setup</li>
-              <li>Chatbot integration</li>
+              <li>Ongoing support + unlimited edits</li>
+              <li>Monitoring + optimization</li>
             </ul>
             <Link href="/contact" className="inline-block bg-[#1F2937] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
-              Book a Call
-            </Link>
-          </div>
-
-          {/* Monthly Care Plan */}
-          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition">
-            <h2 className="text-2xl font-bold text-[#C2410C] mb-2">Monthly Care</h2>
-            <p className="text-gray-600 mb-4">Ongoing support, updates, and strategy — done for you.</p>
-            <p className="text-3xl font-bold mb-4">$150/mo</p>
-            <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
-              <li>Unlimited site edits</li>
-              <li>Blog/content updates</li>
-              <li>Monitoring + optimization</li>
-              <li>Priority support</li>
-            </ul>
-            <Link href="/contact" className="inline-block bg-[#C2410C] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
-              Subscribe Now
+              Get Started
             </Link>
           </div>
 
           {/* AI Education */}
           <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition">
-            <h2 className="text-2xl font-bold text-[#1F2937] mb-2">AI Education</h2>
+            <h2 className="text-2xl font-bold text-[#C2410C] mb-2">AI Education</h2>
             <p className="text-gray-600 mb-4">Fun, hands-on sessions to get you comfortable with AI tools.</p>
             <p className="text-3xl font-bold mb-4">$50 <span className="text-sm font-normal">per session</span></p>
             <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
-              <li>Live 1:1 Zoom/Google session (45 min)</li>
+              <li>Live 1:1 Zoom or Google Meet session (45 min)</li>
               <li>Beginner-friendly walkthroughs</li>
               <li>Real-world tools & use cases</li>
-              <li>Supportive, interactive format</li>
+              <li>Interactive and supportive format</li>
             </ul>
-            <Link href="/contact" className="inline-block bg-[#1F2937] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+            <Link href="/contact" className="inline-block bg-[#C2410C] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
               Book a Session
             </Link>
           </div>
