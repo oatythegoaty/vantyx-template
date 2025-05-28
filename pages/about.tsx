@@ -37,7 +37,7 @@ export default function About() {
           <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md">
             <h3 className="text-lg font-semibold text-[#1F2937] mb-2">Random things I love:</h3>
             <ul className="list-disc pl-5 text-sm text-gray-600 space-y-2">
-              <li>Clean design and dirty jokes</li>
+              <li>Clean design and funny jokes</li>
               <li>Early mornings and late night ideas</li>
               <li>Helping people feel less overwhelmed</li>
               <li>Systems that actually make sense</li>
