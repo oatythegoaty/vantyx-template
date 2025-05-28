@@ -1,3 +1,4 @@
+// pages/about.tsx
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
@@ -52,7 +53,9 @@ export default function About() {
             Let’s build something that’s actually useful — and actually fun.
           </p>
           <a
-            href="/contact"
+            href="https://calendly.com/vantyx-ai/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#C2410C] text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
           >
             Book a Free Discovery Call

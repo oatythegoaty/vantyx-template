@@ -20,12 +20,38 @@ export default function Contact() {
         </section>
 
         <section className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+
+              const form = e.currentTarget;
+              const name = (form.querySelector('#name') as HTMLInputElement).value;
+              const email = (form.querySelector('#email') as HTMLInputElement).value;
+              const message = (form.querySelector('#message') as HTMLTextAreaElement).value;
+
+              const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+              });
+
+              if (res.ok) {
+                alert('Message sent successfully!');
+                form.reset();
+              } else {
+                alert('Something went wrong. Please try again later.');
+              }
+            }}
+            className="space-y-6"
+          >
             <div>
               <label htmlFor="name" className="block text-sm font-semibold mb-1">Name</label>
               <input
                 type="text"
                 id="name"
+                required
                 placeholder="Your name"
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"
               />
@@ -36,6 +62,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                required
                 placeholder="you@example.com"
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"
               />
@@ -45,6 +72,7 @@ export default function Contact() {
               <label htmlFor="message" className="block text-sm font-semibold mb-1">Message</label>
               <textarea
                 id="message"
+                required
                 rows={5}
                 placeholder="What's on your mind?"
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"

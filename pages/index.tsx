@@ -1,14 +1,8 @@
+// pages/index.tsx
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
-
   return (
     <Layout>
       <Head>
@@ -17,64 +11,57 @@ export default function Home() {
       </Head>
 
       {/* Hero */}
-      <section className="relative pt-24 pb-16 text-center overflow-hidden" data-aos="fade-up">
-        {/* Floating Dot Background */}
-        <div className="absolute inset-0 -z-10">
-          <svg
-            className="w-full h-full opacity-10"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <defs>
-              <pattern id="dot-grid" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-                <circle cx="1" cy="1" r="1" fill="#C2410C" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#dot-grid)" />
-          </svg>
-        </div>
-
+      <section className="pt-24 pb-16 text-center">
         <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#C2410C] to-[#1F2937]">
           Welcome to Vantyx.ai
         </h1>
         <p className="mt-4 text-lg max-w-xl mx-auto">
           An AI consulting firm that helps you simplify the complex, automate the everyday, and stay way ahead of the curve.
         </p>
-        <button className="mt-8 px-6 py-3 bg-[#C2410C] text-white rounded-full shadow-md hover:opacity-90 transition duration-300">
+        <a
+          href="https://calendly.com/vantyx-ai/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block px-6 py-3 bg-[#C2410C] text-white rounded-full shadow-md hover:opacity-90 transition duration-300"
+        >
           Book a Free Discovery Call
-        </button>
+        </a>
       </section>
 
       {/* What We Help You Do */}
-      <section className="mt-24 w-full max-w-6xl mx-auto text-center" data-aos="fade-up">
+      <section className="mt-24 w-full max-w-6xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Help You Do</h2>
-        <div className="grid gap-8 md:grid-cols-3 px-4">
-          <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-[#C2410C] mb-2">Launch</h3>
-            <p>We build sleek, AI-ready websites and handle the full setup — domain, hosting, SEO, analytics, and automation workflows.</p>
+            <p>
+              We build sleek, AI-ready websites and handle the full setup — domain, hosting, SEO, analytics, and automation workflows.
+            </p>
           </div>
-          <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-[#1F2937] mb-2">Grow</h3>
-            <p>From content strategy to automated social posts, we help you create a presence that runs smoother — and smarter.</p>
+            <p>
+              From content strategy to automated social posts, we help you create a presence that runs smoother — and smarter.
+            </p>
           </div>
-          <div className="bg-[#F9F9F9] p-6 rounded-2xl shadow-md hover:shadow-lg transition hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-[#C2410C] mb-2">Evolve</h3>
-            <p>Learn how to actually use AI. From agent creation to hands-on education, we’ll teach you how to make tech work for you.</p>
+            <p>
+              Learn how to actually use AI. From agent creation to hands-on education, we’ll teach you how to make tech work for you.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Section Divider (Wave) */}
-      <div className="w-full overflow-hidden py-12 -mt-1" data-aos="fade-up">
+      {/* Divider */}
+      <div className="-mt-1">
         <svg viewBox="0 0 1440 100" className="w-full -mb-1" preserveAspectRatio="none">
           <path fill="#D1D5DB" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
         </svg>
       </div>
 
       {/* Mission */}
-      <section id="mission" className="mt-20 max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <section className="mt-20 max-w-3xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold mb-4 text-[#1F2937]">Why Vantyx Exists</h2>
         <p className="text-lg leading-relaxed">
           Vantyx was built on one core belief — that AI should make your life easier, not more confusing.
@@ -84,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="mt-24 max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <section className="mt-24 max-w-3xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold mb-4 text-[#C2410C]">Meet the Founder</h2>
         <p className="text-lg leading-relaxed">
           I’m Ty — big dude, big thinker, and a builder by nature. I’ve worked across tech and service roles,
@@ -95,18 +82,24 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section id="contact" className="mt-32 mb-24 max-w-6xl mx-auto px-6 text-center" data-aos="zoom-in-up">
-        <div className="rounded-3xl bg-gradient-to-r from-[#C2410C] to-[#1F2937] p-10 text-white shadow-lg">
-          <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
-          <p className="text-lg max-w-xl mx-auto mb-6">
-            Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
-          </p>
-          <a
-            href="#"
-            className="inline-block bg-white text-[#C2410C] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
-          >
-            Schedule a Discovery Call
-          </a>
+      <section className="mt-32 mb-24 max-w-6xl mx-auto px-6 text-center">
+        <div className="rounded-3xl bg-gradient-to-r from-[#C2410C] to-[#1F2937] p-10 md:flex items-center justify-between shadow-lg text-white">
+          <div className="mb-6 md:mb-0 text-left">
+            <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
+            <p className="text-lg max-w-xl">
+              Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
+            </p>
+          </div>
+          <div className="text-center">
+            <a
+              href="https://calendly.com/vantyx-ai/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-[#C2410C] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition"
+            >
+              Schedule a Discovery Call
+            </a>
+          </div>
         </div>
       </section>
     </Layout>
