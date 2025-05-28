@@ -21,7 +21,7 @@ export default function About() {
           </p>
         </section>
 
-        <section className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center text-left" data-aos="fade-up" data-aos-delay="100">
+        <section className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center text-left" data-aos="zoom-in-up" data-aos-delay="100">
           <div>
             <h2 className="text-2xl font-bold mb-2 text-[#C2410C]">Hey, I’m Ty 👋</h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
