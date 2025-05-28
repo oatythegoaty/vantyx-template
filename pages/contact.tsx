@@ -1,7 +1,35 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setStatus('Message sent!');
+      setForm({ name: '', email: '', message: '' });
+    } else {
+      setStatus('Something went wrong. Please try again later.');
+    }
+  };
+
   return (
     <Layout>
       <Head>
@@ -20,39 +48,16 @@ export default function Contact() {
         </section>
 
         <section className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <form
-            onSubmit={async (e) => {
-              e.preventDefault();
-
-              const form = e.currentTarget;
-              const name = (form.querySelector('#name') as HTMLInputElement).value;
-              const email = (form.querySelector('#email') as HTMLInputElement).value;
-              const message = (form.querySelector('#message') as HTMLTextAreaElement).value;
-
-              const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, message }),
-              });
-
-              if (res.ok) {
-                alert('Message sent successfully!');
-                form.reset();
-              } else {
-                alert('Something went wrong. Please try again later.');
-              }
-            }}
-            className="space-y-6"
-          >
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-semibold mb-1">Name</label>
               <input
                 type="text"
                 id="name"
-                required
+                value={form.name}
+                onChange={handleChange}
                 placeholder="Your name"
+                required
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"
               />
             </div>
@@ -62,8 +67,10 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
-                required
+                value={form.email}
+                onChange={handleChange}
                 placeholder="you@example.com"
+                required
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"
               />
             </div>
@@ -72,8 +79,10 @@ export default function Contact() {
               <label htmlFor="message" className="block text-sm font-semibold mb-1">Message</label>
               <textarea
                 id="message"
-                required
+                value={form.message}
+                onChange={handleChange}
                 rows={5}
+                required
                 placeholder="What's on your mind?"
                 className="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C]"
               />
@@ -85,6 +94,8 @@ export default function Contact() {
             >
               Send Message
             </button>
+
+            {status && <p className="text-center text-sm text-gray-600 mt-2">{status}</p>}
           </form>
         </section>
 
