@@ -31,7 +31,7 @@ export default function Pricing() {
             <h2 className="text-2xl font-bold text-[#1F2937] mb-2">Monthly Plan</h2>
             <p className="text-gray-600 mb-4">Our most popular option. A full-featured website, built for your brand, with ongoing support and automation included.</p>
             <p className="text-sm font-medium text-[#C2410C] mb-2">One-time $49 kickoff to get everything in motion — setup, prep, and domain support included.</p>
-            <p className="text-3xl font-bold mb-4">$235/mo</p>
+            <p className="text-3xl font-bold mb-4">$159/mo</p>
             <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
               <li>Website creation (1–5 pages)</li>
               <li>Advanced SEO setup</li>
@@ -53,7 +53,7 @@ export default function Pricing() {
           <div data-aos="zoom-in" className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition border-2 border-[#1F2937]">
             <h2 className="text-2xl font-bold text-[#C2410C] mb-2">AI Education</h2>
             <p className="text-gray-700 mb-4">Learn how to actually use AI — in real life. These hands-on sessions are designed for beginners and curious minds alike.</p>
-            <p className="text-3xl font-bold mb-4">$50 <span className="text-sm font-normal text-gray-700">per session</span></p>
+            <p className="text-3xl font-bold mb-4">$35 <span className="text-sm font-normal text-gray-700">per session</span></p>
             <ul className="text-sm text-left text-gray-700 list-disc pl-5 space-y-2 mb-6">
               <li>Live 1:1 Zoom or Google Meet session (45 min)</li>
               <li>Beginner-friendly walkthroughs</li>
