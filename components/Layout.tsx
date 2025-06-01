@@ -46,6 +46,10 @@ export default function Layout({ children }: { children: ReactNode }) {
 
       {/* Footer */}
       <Footer />
+      <script
+        src="https://cdn.userway.org/widget.js"
+        data-account="9DO7BSASMI"
+      ></script>
     </>
   );
 }
