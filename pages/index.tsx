@@ -102,10 +102,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <script
-        src="https://cdn.userway.org/widget.js"
-        data-account="9DO7BSASMI"
-      ></script>
     </Layout>
   );
 }

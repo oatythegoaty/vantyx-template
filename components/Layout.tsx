@@ -49,6 +49,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <script
         src="https://cdn.userway.org/widget.js"
         data-account="9DO7BSASMI"
+        data-position="3"
       ></script>
     </>
   );
