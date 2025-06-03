@@ -118,7 +118,7 @@ export default function Contact() {
         <section className="text-center mt-16 text-sm text-gray-600" data-aos="fade-up" data-aos-delay="200">
           <p>
             Or reach out directly at{' '}
-            <a href="mailto:hello@vantyx.ai" className="text-[#C2410C] underline">
+            <a href="mailto:vantyx.ai@gmail.com" className="text-[#C2410C] underline">
               hello@vantyx.ai
             </a>
           </p>
