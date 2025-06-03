@@ -119,7 +119,7 @@ export default function Contact() {
           <p>
             Or reach out directly at{' '}
             <a href="mailto:vantyx.ai@gmail.com" className="text-[#C2410C] underline">
-              hello@vantyx.ai
+              vantyx.ai@gmail.com
             </a>
           </p>
         </section>
