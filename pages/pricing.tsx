@@ -61,9 +61,14 @@ export default function Pricing() {
               <li>Interactive and supportive format</li>
             </ul>
             <div className="text-center">
-              <Link href="/contact" className="inline-block bg-[#C2410C] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+              <a
+                href="https://calendly.com/vantyx-ai/ai-education"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#C2410C] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition"
+              >
                 Book a Session
-              </Link>
+              </a>
             </div>
           </div>
         </div>
