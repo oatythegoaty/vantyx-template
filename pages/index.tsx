@@ -31,23 +31,17 @@ export default function Home() {
       {/* What We Help You Do */}
       <section className="mt-24 w-full max-w-6xl mx-auto text-center px-4" data-aos="fade-up">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Help You Do</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="0">
-            <h3 className="text-xl font-semibold text-[#C2410C] mb-2">Launch</h3>
-            <p>
-              We build sleek, AI-ready websites and handle the full setup — domain, hosting, SEO, analytics, and automation workflows.
-            </p>
-          </div>
+        <div className="grid gap-8 md:grid-cols-2">
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
-            <h3 className="text-xl font-semibold text-[#1F2937] mb-2">Grow</h3>
+            <h3 className="text-xl font-semibold text-[#1F2937] mb-2">Grow with Automation</h3>
             <p>
-              From content strategy to automated social posts, we help you create a presence that runs smoother — and smarter.
+              From scheduling content to automating repetitive tasks, I help you create smoother workflows with tools that make sense.
             </p>
           </div>
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
-            <h3 className="text-xl font-semibold text-[#C2410C] mb-2">Evolve</h3>
+            <h3 className="text-xl font-semibold text-[#C2410C] mb-2">Learn AI with Confidence</h3>
             <p>
-              Learn how to actually use AI. From agent creation to hands-on education, we’ll teach you how to make tech work for you.
+              From hands-on education to real-world examples, my sessions help you understand and actually use AI in your life or business.
             </p>
           </div>
         </div>
@@ -65,8 +59,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4 text-[#1F2937]">Why Vantyx Exists</h2>
         <p className="text-lg leading-relaxed">
           Vantyx was built on one core belief — that AI should make your life easier, not more confusing.
-          I'm here to bridge the gap between smart technology and real people. Whether you're a small business owner, creator, or just curious about AI,
-          I'm making tools that are practical, personal, and built with intention.
+          I focus on making smart tools approachable and useful. Whether you're curious about AI, want to automate your workflow, or just need a better way to understand what's possible — I'll help you figure it out.
         </p>
       </section>
 
@@ -85,9 +78,9 @@ export default function Home() {
       <section className="mt-32 mb-24 max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
         <div className="rounded-3xl bg-gradient-to-r from-[#C2410C] to-[#1F2937] p-10 md:flex items-center justify-between shadow-lg text-white">
           <div className="mb-6 md:mb-0 text-left">
-            <h2 className="text-3xl font-bold mb-3">Let’s Build Something Smart Together</h2>
+            <h2 className="text-3xl font-bold mb-3">Let’s Explore AI Together</h2>
             <p className="text-lg max-w-xl">
-              Whether you’re just starting out or looking to level up, I’ve got tools that make life easier and work smarter. Let's talk possibilities.
+              Curious about what AI can do for you? My sessions break down the complicated stuff in a way that actually makes sense. Let's chat and build something smart — no jargon, no pressure.
             </p>
           </div>
           <div className="text-center">

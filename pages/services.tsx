@@ -14,24 +14,11 @@ export default function Services() {
           What We Offer
         </h1>
         <p className="text-lg mb-12 max-w-2xl mx-auto">
-          Whether you're just getting started or looking to scale smart, here’s how we help bring AI into your world — without making it weird.
+          Here’s how we help bring AI and automation into your world — without making it weird.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
-        {/* Website Creation */}
-        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
-          <h2 className="text-2xl font-semibold mb-2 text-[#C2410C]">Website Creation</h2>
-          <p className="text-base mb-4">
-            From layout to launch — we design responsive, AI-ready sites that reflect your brand and get you noticed.
-          </p>
-          <ul className="list-disc pl-5 text-sm text-gray-600">
-            <li>Custom design</li>
-            <li>SEO-optimized</li>
-            <li>Domain + hosting support</li>
-          </ul>
-        </div>
-
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {/* Social & Branding */}
         <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <h2 className="text-2xl font-semibold mb-2 text-[#1F2937]">Social & Branding</h2>

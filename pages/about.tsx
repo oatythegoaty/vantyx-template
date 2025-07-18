@@ -25,8 +25,8 @@ export default function About() {
           <div>
             <h2 className="text-2xl font-bold mb-2 text-[#C2410C]">Hey, I’m Ty 👋</h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              I’m a builder, strategist, and problem-solver at heart. With a background that blends tech, creativity, and service — 
-              I launched Vantyx to help people like me bring their ideas to life with a little help from AI.
+              I’m a builder, strategist, and problem-solver at heart. With a background that blends tech, creativity, and service —
+              I launched Vantyx to help people like me feel confident using AI — not overwhelmed by it.
             </p>
             <p className="text-base text-gray-700 leading-relaxed">
               I care about clean systems, clarity, and building things that feel real — not robotic. If I can take the weight off your shoulders 
@@ -50,7 +50,7 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-4">This isn’t some big agency. It’s personal.</h2>
           <p className="text-base text-gray-700 max-w-xl mx-auto mb-6">
             You’ll get me in your inbox, your corner, and your strategy calls. That’s the vibe.
-            Let’s build something that’s actually useful — and actually fun.
+            Let’s make tech actually useful — and actually fun.
           </p>
           <a
             href="https://calendly.com/vantyx-ai/30min"
