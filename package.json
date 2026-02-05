@@ -10,7 +10,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.7",
     "lottie-web": "^5.13.0",
-    "next": "latest",
+    "next": "15.5.8",
     "nodemailer": "^7.0.3",
     "postcss": "^8.4.14",
     "react": "latest",
